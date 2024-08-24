@@ -1,6 +1,6 @@
 body
 {
-	text-align: center;
+	text-align: justify;
     margin: auto;
 	width: 50%;
 	border: 3px solid green;
@@ -12,6 +12,6 @@ body
 p
 {
 	
-	text-align: justify;
+	text-align: left;
 	
 }
