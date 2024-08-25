@@ -9,6 +9,8 @@ body
 	/*border: 3px solid green;*/
 	background: black;
   	color: white;
+	letter-spacing: 3px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 p
@@ -24,4 +26,24 @@ img {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+/* unvisited link */
+a:link {
+  color: #bdb15d;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #a25200;
+}
+
+/* selected link */
+a:active {
+  color: #043e43;
 }
