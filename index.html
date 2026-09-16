@@ -70,28 +70,20 @@
 
 .accent-square {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 40px;
   height: 40px;
   background: #E8B4AC;
 }
 
-.radical {
-  position: absolute;
-  bottom: -20px;
-  left: -15px;
-  font-family: 'Noto Serif SC', serif;
-  font-size: 3rem;
-  color: var(--ink);
-}
-  
 .jing {
-font-family: 'Noto Serif SC', serif;
-font-size: 2rem;
-color: var(--ink);
-pointer-events: none;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.6rem;
+  color: var(--ink);
+  pointer-events: none;
 }
   
 }
@@ -103,10 +95,8 @@ pointer-events: none;
   <div class="composition">
 
     <div class="enter-mark">
-      <a href="photo.html" class="accent-square">
-      <span class="jing">井</span>
-      </a>
-      <span class="radical">辶</span>
+      <a href="photo.html" class="accent-square"></a>
+      <span class="jing">进</span>
     </div>
     
     <p class="line-across">杭州，我来啦</p>
