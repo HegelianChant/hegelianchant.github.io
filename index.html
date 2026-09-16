@@ -1,13 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-<title>hi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>来啦</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F1ECE1;
+    --ink: #1C1B19;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8vh 6vw;
+  }
+
+  .composition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+    transform: translate(9%, 7%);
+  }
+
+  .line-across {
+    font-family: 'Noto Serif SC', sans-serif;
+    font-weight: 300;
+    font-size: clamp(0.95rem, 1.7vw, 1.15rem);
+    letter-spacing: 0.08em;
+    margin: 0;
+  }
+
+  .line-down {
+    writing-mode: vertical-rl;
+    font-family: 'Noto Serif SC', sans-serif;
+    font-weight: 300;
+    font-size: clamp(0.8rem, 1.4vw, 0.95rem);
+    letter-spacing: 0.3em;
+    margin: 0 0 0 2.4rem;
+  }
+
+  .ticket-frame {
+    margin-top: 0.8rem;
+    max-width: 220px;
+    width: 45vw;
+  }
+  .ticket-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+</style>
 </head>
 <body>
-<font face="Times New Roman" color="black" size="40">
-haha I'm coming to visit
-</font>
-<br><br>
-<!-- <img src="qr-code.png" width="500"> -->
+
+  <div class="composition">
+    <p class="line-across">杭州，我来啦</p>
+    <p class="line-down">机票已订，不是开玩笑</p>
+
+    <div class="ticket-frame">
+      <!-- swap this filename for your actual ticket/flight confirmation screenshot -->
+      <img src="flight-confirmation.jpg" alt="flight confirmation">
+    </div>
+  </div>
+
 </body>
 </html>
