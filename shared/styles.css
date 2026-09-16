@@ -21,3 +21,9 @@ body {
   font-family: 'HarmonyOS Sans SC';
   src: url('../assets/fonts/HarmonyOS_Sans_SC_Light.ttf') format('truetype');
 }
+
+.enter-mark {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
