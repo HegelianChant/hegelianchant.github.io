@@ -53,6 +53,12 @@
     left: 75%;
   }
 
+  .gallery-mark {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+
   .accent-square {
     animation: pulse 2.5s ease-in-out infinite;
     position: relative;
@@ -77,11 +83,6 @@
     60% { transform: scale(1.08); }
   }
 
-  .enter-mark {
-  position: absolute;
-  top: 10%;
-  left: 8%;
-}
 
 </style>
 </head>
@@ -92,13 +93,14 @@
     <!--<span class="jing">进</span>-->
   </div>
 
-  <div class="composition">
+  <div class="gallery-mark">
+    <a href="pages/photos.html" class="accent-square"></a>
+  </div>
 
+  <div class="composition">
     <p class="line-across">中国我来啦</p>
     <p class="line-down">你可得好好带我逛逛哦</p>
-
     <div class="ticket-frame">
-      <!-- swap this filename for your actual ticket/flight confirmation screenshot -->
       <!-- <img src="flight-confirmation.jpg" alt="flight confirmation"> -->
     </div>
   </div>
