@@ -62,10 +62,14 @@
     height: auto;
   }
 
-  .accent-square {
+  .enter-mark {
   position: absolute;
   top: 30%;
   left: 65%;
+}
+
+.accent-square {
+  position: relative;
   width: 40px;
   height: 40px;
   background: #E8B4AC;
@@ -77,6 +81,15 @@
   color: var(--ink);
   text-decoration: none;
 }
+
+.radical {
+  position: absolute;
+  bottom: -6px;
+  left: -14px;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.5rem;
+  color: var(--ink);
+}
   
 </style>
 </head>
@@ -84,7 +97,10 @@
 
   <div class="composition">
 
-    <a href="photo.html" class="accent-square">回</a>
+    <div class="enter-mark">
+      <a href="photo.html" class="accent-square">井</a>
+      <span class="radical">辶</span>
+    </div>
     
     <p class="line-across">杭州，我来啦</p>
     <p class="line-down">你可得好好带我逛逛哦</p>
