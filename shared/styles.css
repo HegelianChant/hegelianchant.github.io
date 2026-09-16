@@ -27,3 +27,33 @@ body {
   top: 10%;
   left: 8%;
 }
+
+.site-links {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.2rem 0;
+}
+
+.site-links a {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(28, 27, 25, 0.06);
+  color: var(--ink);
+  text-decoration: none;
+  font-family: 'HarmonyOS Sans SC', sans-serif;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.site-links a:hover {
+  background: rgba(28, 27, 25, 0.12);
+}
+
