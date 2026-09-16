@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>来啦</title>
+<link rel="stylesheet" href="shared/styles.css">
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8vh 6vw;
+  }
+
+  .composition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+    transform: translate(15%, 25%);
+  }
+
+  .line-across {
+    font-family: 'HarmonyOS Sans SC', sans-serif;
+    font-size: clamp(1.3rem, 2.6vw, 1.6rem);
+    letter-spacing: 0.08em;
+    margin: 0;
+  }
+
+  .line-down {
+    writing-mode: vertical-rl;
+    font-family: 'HarmonyOS Sans SC', sans-serif;
+    font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+    letter-spacing: 0.3em;
+    margin: 0 0 0 5rem;
+  }
+
+  .ticket-frame {
+    margin-top: 0.8rem;
+    max-width: 220px;
+    width: 45vw;
+  }
+  .ticket-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .enter-mark {
+    position: absolute;
+    top: 30%;
+    left: 75%;
+  }
+
+  .accent-square {
+    animation: pulse 2.5s ease-in-out infinite;
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #E8B4AC;
+  }
+
+  .jing {
+    position: absolute;
+    top: -4px;
+    left: -6px;
+    font-family: 'HarmonyOS Sans SC', sans-serif;
+    font-size: 2.5rem;
+    color: var(--ink);
+    pointer-events: none;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    60% { transform: scale(1.08); }
+  }
+</style>
+</head>
+<body>
+
+  <div class="composition">
+
+    <div class="enter-mark">
+      <a href="photo.html" class="accent-square"></a>
+      <!--<span class="jing">进</span>-->
+    </div>
+
+    <p class="line-across">中国我来啦</p>
+    <p class="line-down">你可得好好带我逛逛哦</p>
+
+    <div class="ticket-frame">
+      <!-- swap this filename for your actual ticket/flight confirmation screenshot -->
+      <!-- <img src="flight-confirmation.jpg" alt="flight confirmation"> -->
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* ===== Design tokens ===== */
+:root {
+  --paper: #F1ECE1;
+  --ink: #1C1B19;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* ===== Fonts ===== */
+@font-face {
+  font-family: 'HarmonyOS Sans SC';
+  src: url('../assets/fonts/HarmonyOS_Sans_SC_Regular.ttf') format('truetype');
+}
