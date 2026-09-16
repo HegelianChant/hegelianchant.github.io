@@ -69,6 +69,7 @@
 }
 
 .accent-square {
+  animation: pulse 2.5s ease-in-out infinite;
   position: relative;
   display: block;
   width: 40px;
@@ -85,9 +86,13 @@
   color: var(--ink);
   pointer-events: none;
 }
-  
+
+  @keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
 }
   
+}  
 </style>
 </head>
 <body>
